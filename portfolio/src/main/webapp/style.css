@@ -1,9 +1,130 @@
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+html {
+  background: #0a192f;
+  font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-#greeting-container {
-  margin-top: 20px;
+.header {
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+}
+
+header {
+    font-weight: bold;
+    font-size: medium;
+    margin: 0;
+}
+
+nav {
+    align-self:left;
+}
+
+nav ul {
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+nav li {
+    align-self: middle;
+    display: inline-block;
+    margin-right: 70px;
+    margin-left: 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+nav a {
+    color: #E0E0E0;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+nav a:hover {
+     color: #8B0000;
+    text-underline-position: below;
+}
+
+h1 {
+    text-align: center;
+    margin: 100px;
+    padding: 0;
+}
+
+.home {
+    background: url(images/Personal_picture.png);
+    background-repeat: no-repeat;
+    background-size: 400px 500px;
+    background-position-x: 85%;
+    background-position-y: center;
+    background-attachment: fixed;
+    display: flex;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width {
+    margin: auto 0 auto 30px;
+}
+
+.home .home-content .text-1 {
+    color: #E0E0E0;
+    font-size: 27px;
+}
+
+.home .home-content .text-2 {
+    color:#8B0000;
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+    color: #E0E0E0;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.home .home-content .button-home {
+    background-color: #8B0000;
+    border: none;
+    border-radius: 12px;
+    color: #E0E0E0;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    padding: 15px 32px;
+}
+
+#about {
+    color: #E0E0E0;
+    display: inline-block;
+    height:700px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.about-content {
+    color: #E0E0E0;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .5em;
+    width: 40em;
+}
+
+header > h1 {
+	border-bottom: thick solid #8B0000;
+	color: #E0E0E0;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 100%;
+	width: 1200px;
 }
