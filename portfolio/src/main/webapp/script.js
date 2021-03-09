@@ -14,8 +14,7 @@
 
 async function showFact() {
   const responseFromServer = await fetch('/fact');
-  const textFromResponse = await responseFromServer.text();
-
+  const textFromResponse = await responseFromServer.json();
   const factContainer = document.getElementById('fact-container');
-  factContainer.innerText = textFromResponse;
+  factContainer.innerText = textFromResponse[Math.floor(Math.random() * 4)];
 }
