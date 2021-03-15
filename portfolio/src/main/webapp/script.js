@@ -18,20 +18,3 @@ async function showFact() {
   const factContainer = document.getElementById('fact-container');
   factContainer.innerText = textFromResponse[Math.floor(Math.random() * 4)];
 }
-
-function loadTasks() {
-  fetch('/list-tasks').then(response => response.json()).then((tasks) => {
-    const taskListElement = document.getElementById('task-list');
-    tasks.forEach((task) => {
-      taskListElement.appendChild(createTaskElement(task));
-    })
-  });
-}
-
-function createTaskElement(task) {
-  const taskElement = document.createElement('li');
-  taskElement.className = 'task';
-
-  const titleElement = document.createElement('span');
-  titleElement.innerText = task.title;
-}
