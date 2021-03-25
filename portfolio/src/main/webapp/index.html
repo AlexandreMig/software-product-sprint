@@ -12,6 +12,7 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
       </div>
@@ -53,14 +54,32 @@
                 <li>HTML</li>
                 <li>CSS</li>
             </ul>
-            <!--Adding a servlet to portofolio-->
-            <p>
-                Click <a href="/String">here</a> to access servlet
-            </p>
                 <button onclick="showFact();">Get fun fact</button>
-            <p id="fact-container">
-            </p>
+             <p id="fact-container">
+             </p>
         </div>
     </div>
+
+    <section id="contact">
+        <header><h1>Contact</h1></header>
+    <div class="contact-form" id="contact">
+        <div class="contact-content">
+            <label>Name: </label>
+            <input type="text" name="name" placeholder="Enter Your Name">
+
+            <label>Email: </label>
+            <input type="text" name="email" placeholder="Enter Your Email">
+
+            <label>Message: </label>
+            <form method="POST" action="/new-task">
+              <input type="text" name="title" />
+              <br>
+              <a class="btn"><button>Submit</button></a>
+            </form>
+
+            <hr/>
+        </div>
+    </div>
+    </section>
   </body>
 </html>

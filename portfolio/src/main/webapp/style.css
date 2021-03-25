@@ -6,125 +6,186 @@ html {
 }
 
 .header {
-    margin: 0 auto;
-    position: fixed;
-    width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
 }
 
 header {
-    font-weight: bold;
-    font-size: medium;
-    margin: 0;
+  font-weight: bold;
+  font-size: medium;
+  margin: 0;
 }
 
 nav {
-    align-self:left;
+  align-self:left;
 }
 
 nav ul {
-    list-style: none;
-    margin:0;
-    padding: 0;
+  list-style: none; 
+  margin:0;
+  padding: 0;
 }
 
 nav li {
-    align-self: middle;
-    display: inline-block;
-    margin-right: 70px;
-    margin-left: 5px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+  align-self: middle;
+  display: inline-block;
+  margin-right: 70px;
+  margin-left: 5px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 nav a {
-    color: #E0E0E0;
-    text-decoration: none;
-    text-transform: uppercase;
+  color: #E0E0E0;
+  text-decoration: none;
+  text-transform: uppercase;
     
 }
 
 nav a:hover {
-    color: #8B0000;
-    text-underline-position: below;
+  color: #8B0000;
+  text-underline-position: below;
 }
 
 h1 {
-    margin: 100px;
-    text-align: center;
-    padding: 0;
+  font-weight: bold;
+  margin: 100px;
+  text-align: center;
+  padding: 0;
 }
 
 .home {
-    background: url(images/Personal_picture.png);
-    background-repeat: no-repeat;
-    background-size: 400px 500px;
-    background-position-x: 85%;
-    background-position-y: center;
-    background-attachment: fixed;
-    display: flex;
-    height: 100vh;
-    font-family: 'Ubuntu', sans-serif;
+  background: url(images/Personal_picture.png);
+  background-repeat: no-repeat;
+  background-size: 400px 500px;
+  background-position-x: 85%;
+  background-position-y: center;
+  background-attachment: fixed;
+  display: flex;
+  height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .home .max-width {
-    margin: auto 0 auto 30px;
+  margin: auto 0 auto 30px;
 }
 
 .home .home-content .text-1 {
-    color: #E0E0E0;
-    font-size: 27px;
+  color: #E0E0E0;
+  font-size: 27px;
 }
 
 .home .home-content .text-2 {
-    color:#8B0000;
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
+  color:#8B0000;
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
 }
 
 .home .home-content .text-3 {
-    color: #E0E0E0;
-    font-size: 20px;
-    margin: 5px 0;
+  color: #E0E0E0;
+  font-size: 20px;
+  margin: 5px 0;
 }
 
 .home .home-content .button-home {
-    background-color: #8B0000;
-    border: none;
-    border-radius: 12px;
-    color: #E0E0E0;
-    cursor: pointer;
-    display: inline-block;
-    margin: 4px 2px;
-    text-align: center;
-    text-decoration: none;
-    padding: 15px 32px;
+  background-color: #8B0000;
+  border: none;
+  border-radius: 12px;
+  color: #E0E0E0;
+  cursor: pointer;
+  display: inline-block;
+  margin: 4px 2px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
 }
 
 #about {
-    color: #E0E0E0;
-    display: inline-block;
-    height:700px;
-    margin-top: 20px;
-    width: 100%;
+  color: #E0E0E0;
+  display: inline-block;
+  height:700px;
+  margin-top: 20px;
+  width: 100%;
 }
 
 .about-content {
-    color: #E0E0E0;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    padding: .5em;
-    width: 40em;
+  color: #E0E0E0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .5em;
+  text-align: left;
+  width: 40em;
 }
 
 header > h1 {
-	border-bottom: thick solid #8B0000;
-	color: #E0E0E0;
+  border-bottom: thick solid #8B0000;
+  color: #E0E0E0;
 }
 
 .container {
-	margin: 0 auto;
-	max-width: 100%;
-	width: 1200px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1200px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1200px;
+}
+
+#contact {
+  color: #E0E0E0;
+  height:700px;
+}
+
+
+.contact-form {
+  background: #0a192f;
+  border-radius: 8px;
+  box-sizing: border-box;
+  left: 50%;
+  max-width: 600px;
+  margin: auto;
+  padding: 30px 40px;
+  text-align: center;
+  top: 50%;
+  transform: (-50%, -50%);
+  width: 85%;
+}
+
+.contact-content {
+  background: #8B0000;
+  border: 1px #8B0000;
+  border-radius: 8px;
+  margin: 8px 0;
+  padding: 12px 18px;
+}
+
+.contact-content label {
+  color: #E0E0E0;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.contact-content input, .contact-content textarea {
+  border: none;
+  font-size: 18px;
+  margin-top: 6px;
+  outline: none;
+  width: 100%;
+}
+
+.btn {
+  background: #8B0000;
+  cursor: pointer;
+  display: block;
+  margin-top: 8px;
+  padding: 14px 0;
 }
