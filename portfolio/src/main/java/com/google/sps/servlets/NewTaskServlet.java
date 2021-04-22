@@ -18,18 +18,19 @@ public class NewTaskServlet extends HttpServlet {
 
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    String name = Jsoup.clean(request.getParameter("name"), Whitelist.none());
+    String email  = Jsoup.clean(request.getParameter("email"), Whitelist.none());
     String title = Jsoup.clean(request.getParameter("title"), Whitelist.none());
-    long timestamp = System.currentTimeMillis();
-
+    
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
     KeyFactory keyFactory = datastore.newKeyFactory().setKind("Task");
     FullEntity taskEntity =
         Entity.newBuilder(keyFactory.newKey())
+            .set("name", name)
+            .set("email", email)
             .set("title", title)
-            .set("timestamp", timestamp)
             .build();
     datastore.put(taskEntity);
-
-    response.sendRedirect("/String");
+    response.sendRedirect("/index.html");
   }
 }
