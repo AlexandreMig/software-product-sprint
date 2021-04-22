@@ -71,10 +71,11 @@
             <input type="text" name="email" placeholder="Enter Your Email">
 
             <label>Message: </label>
-            <form method="POST" action="/new-task">
-              <input type="text" name="title" />
-              <br>
-              <a class="btn"><button>Submit</button></a>
+            <form action="/form-handler" method="POST">
+              <p>Enter some text here:</p>
+              <textarea name="text-input"></textarea>
+              <br/>
+              <input type="submit" />
             </form>
 
             <hr/>
