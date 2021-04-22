@@ -30,6 +30,12 @@ public class NewTaskServlet extends HttpServlet {
             .build();
     datastore.put(taskEntity);
 
+    String textValue = request.getParameter("title");
+
+    System.out.println("You submitted: " + textValue);
+
+    response.getWriter().println("You submitted: " + textValue);
+
     response.sendRedirect("/String");
   }
 }
