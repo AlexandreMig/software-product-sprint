@@ -64,21 +64,21 @@
         <header><h1>Contact</h1></header>
     <div class="contact-form" id="contact">
         <div class="contact-content">
+          <form action="/new-task" method="POST">
             <label>Name: </label>
-            <input type="text" name="name" placeholder="Enter Your Name">
+            <textarea type="text" name="name" placeholder="Enter Your Name"></textarea>
 
             <label>Email: </label>
-            <input type="text" name="email" placeholder="Enter Your Email">
+            <textarea type="text" name="email" placeholder="Enter Your Email"></textarea>
 
             <label>Message: </label>
-            <form action="/new-task" method="POST">
-              <p>Enter some text here:</p>
               <textarea name="title"></textarea>
               <br/>
               <input type="submit" />
-            </form>
+          </form>
 
             <hr/>
+        <ul id="task-list"></ul>
         </div>
     </div>
     </section>
